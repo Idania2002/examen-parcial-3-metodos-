@@ -1,0 +1,99 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0f2f7; /* Un azul claro */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;  <-- Puedes quitar esto del body si usas margin: 0 auto; en los hijos,
+                                  aunque no causa conflicto si los hijos tienen width/max-width */
+    min-height: 100vh;
+}
+h1 {
+    color: #0288d1;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    width: 100%; /* Asegura que el h1 ocupe todo el ancho para que text-align: center funcione */
+}
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Define el ancho máximo del formulario */
+    width: 100%; /* El formulario ocupará el 100% del espacio hasta el max-width */
+    box-sizing: border-box;
+    margin: 0 auto 30px auto; /* Centra horizontalmente y añade margen inferior */
+    /* margin-top: 0; margin-right: auto; margin-bottom: 30px; margin-left: auto; */
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+input[type="text"],
+input[type="number"],
+select {
+    width: calc(100% - 22px);
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #b3e5fc; /* Azul claro */
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+select {
+    appearance: none; /* Quita el estilo por defecto del navegador */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%22height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007bff%22%20d%3D%22M287%2C197.8a28.4%2C28.4%2C0%2C0%2C1-40.2%2C0L146.2%2C97.1L45.6%2C197.8a28.4%2C28.4%2C0%2C0%2C1-40.2%2C0L5.6%2C157.6a28.4%2C28.4%2C0%2C0%2C1%2C0-40.2l120-120a28.4%2C28.4%2C0%2C0%2C1%2C40.2%2C0l120%2C120a28.4%2C28.4%2C0%2C0%2C1%2C0%2C40.2Z%22%2F%3E%3C%2Fsvg%3E'); /* Flecha personalizada */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1em;
+    padding-right: 30px;
+}
+button[type="submit"] {
+    background-color: #007bff; /* Azul vibrante */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+}
+.results-section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Define el ancho máximo de la sección de resultados */
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto; /* Centra horizontalmente */
+}
+.results-section h2 {
+    color: #28a745; /* Verde para resultados */
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+.results-section p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+.results-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
